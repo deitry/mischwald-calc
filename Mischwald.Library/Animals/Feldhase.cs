@@ -2,7 +2,7 @@
 
 namespace Mischwald.Animals;
 
-public class Feldhase(int count = 1) : IAnimal
+public class Feldhase(int count = 1) : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 

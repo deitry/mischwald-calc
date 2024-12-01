@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Bats;
 
-public interface IBat : IAnimalOrPlant
+public interface IBat : ILeftRight
 {
     int IActivePart.GetInstancePoints(PointsCalculationContext ctx)
     {

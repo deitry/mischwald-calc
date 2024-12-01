@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 /// <summary>
 /// Лиса
 /// </summary>
-public class Fuchs : IAnimal
+public class Fuchs : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 

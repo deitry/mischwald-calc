@@ -2,7 +2,7 @@
 
 namespace Mischwald.Animals;
 
-public class Braunbaer : IAnimal
+public class Braunbaer : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 

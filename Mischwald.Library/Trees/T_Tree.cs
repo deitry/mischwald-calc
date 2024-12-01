@@ -4,9 +4,9 @@ public abstract class T_Tree : IActivePart
 {
     public bool Full => Top != null && Bottom != null && Left != null && Right != null;
 
-    private readonly IAnimalOrPlant? _top;
+    private readonly ITop? _top;
 
-    public IAnimalOrPlant? Top
+    public ITop? Top
     {
         get => _top;
         init
@@ -18,8 +18,8 @@ public abstract class T_Tree : IActivePart
         }
     }
 
-    private readonly IAnimalOrPlant? _bottom;
-    public IAnimalOrPlant? Bottom
+    private readonly IBottom? _bottom;
+    public IBottom? Bottom
     {
         get => _bottom;
         init
@@ -31,8 +31,8 @@ public abstract class T_Tree : IActivePart
         }
     }
 
-    private readonly IAnimalOrPlant? _left;
-    public IAnimalOrPlant? Left
+    private readonly ILeftRight? _left;
+    public ILeftRight? Left
     {
         get => _left;
         init
@@ -44,8 +44,8 @@ public abstract class T_Tree : IActivePart
         }
     }
 
-    private readonly IAnimalOrPlant? _right;
-    public IAnimalOrPlant? Right
+    private readonly ILeftRight? _right;
+    public ILeftRight? Right
     {
         get => _right;
         init
