@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Luchs : IAnimal
+public class Luchs : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 

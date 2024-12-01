@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Tests;
 
-public class AnimalsTests
+public class WildschweinTests
 {
     [Test]
     public void Player_has_only_wildschwein()

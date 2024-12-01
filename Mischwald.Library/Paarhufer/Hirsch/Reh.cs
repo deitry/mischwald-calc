@@ -2,7 +2,9 @@
 
 namespace Mischwald.Paarhufer.Hirsch;
 
-public class Reh<T> : Hirsch
+public abstract class Reh : Hirsch;
+
+public class Reh<T> : Reh
     where T : ITypedTree
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
