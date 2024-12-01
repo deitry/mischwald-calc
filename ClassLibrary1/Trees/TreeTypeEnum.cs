@@ -8,4 +8,5 @@ public enum TreeTypeEnum
     Buche,
     Douglasie,
     Eiche,
+    Tanne,
 }

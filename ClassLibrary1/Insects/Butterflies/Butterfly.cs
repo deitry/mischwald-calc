@@ -16,13 +16,12 @@ public class Butterfly : IInsect, ITop
 
         return distinctTypes.Count() switch
         {
-            0 => 0,
             1 => 0,
             2 => 3,
             3 => 6,
             4 => 12,
-            5 => 20,
-            _ => 20,
+            >=5 => 20,
+            _ => 0,
         };
     }
 }

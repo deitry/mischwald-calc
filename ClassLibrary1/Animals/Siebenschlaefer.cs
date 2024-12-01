@@ -1,0 +1,14 @@
+﻿namespace ClassLibrary1.AnimalsAndPlants;
+
+public class Siebenschlaefer : IAnimal
+{
+    public int GetInstancePoints(PointsCalculationContext ctx)
+    {
+        throw new NotImplementedException();
+
+        // 15 очков если с другой стороны дерева есть летучая мышь
+
+        // TODO: разделять на правую и левую?
+        // TODO: использовать отдельную проперти Parent или искать каждый раз?
+    }
+}

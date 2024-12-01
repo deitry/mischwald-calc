@@ -1,0 +1,17 @@
+﻿namespace ClassLibrary1.Lizards;
+
+public class Feuersalamander : ILizard, IBottom
+{
+    public int GetTypePoints(PointsCalculationContext ctx)
+    {
+        var salamanders = ctx.CurrentPlayer.GetAllCards<Feuersalamander>();
+
+        return salamanders.Count switch
+        {
+            1 => 5,
+            2 => 15,
+            >=3 => 25,
+            _ => 0,
+        };
+    }
+}
