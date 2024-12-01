@@ -1,6 +1,6 @@
-﻿using ClassLibrary1;
-using ClassLibrary1.AnimalsAndPlants;
-using ClassLibrary1.Paarhufer;
+﻿using Mischwald;
+using Mischwald.Paarhufer;
+using Mischwald.Trees;
 
 namespace TestProject1;
 

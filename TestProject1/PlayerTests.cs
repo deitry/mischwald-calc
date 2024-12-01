@@ -1,6 +1,7 @@
-﻿using ClassLibrary1;
-using ClassLibrary1.AnimalsAndPlants;
-using ClassLibrary1.Butterflies;
+﻿using Mischwald;
+using Mischwald.Animals;
+using Mischwald.Insects.Butterflies;
+using Mischwald.Trees;
 
 namespace TestProject1;
 

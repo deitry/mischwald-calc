@@ -1,6 +1,4 @@
-﻿using Foundation;
-
-namespace MischwaldCalc;
+﻿namespace MischwaldCalc.Platforms.iOS;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

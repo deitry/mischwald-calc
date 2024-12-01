@@ -1,7 +1,4 @@
-﻿using ObjCRuntime;
-using UIKit;
-
-namespace MischwaldCalc;
+﻿namespace MischwaldCalc.Platforms.MacCatalyst;
 
 public class Program
 {

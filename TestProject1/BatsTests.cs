@@ -1,6 +1,6 @@
-﻿using ClassLibrary1;
-using ClassLibrary1.Bats;
-using ClassLibrary1.Butterflies;
+﻿using Mischwald;
+using Mischwald.Bats;
+using Mischwald.Trees;
 
 namespace TestProject1;
 

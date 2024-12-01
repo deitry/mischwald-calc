@@ -1,5 +1,5 @@
 ﻿<Solution>
-  <Project Path="ClassLibrary1\ClassLibrary1.csproj" Type="Classic C#" />
+  <Project Path="Mischwald.Library\Mischwald.Library.csproj" Type="Classic C#" />
   <Project Path="MischwaldCalc\MischwaldCalc.csproj">
     <Configuration Solution="Debug|Any CPU" Project="Debug|Any CPU|Deploy" />
     <Configuration Solution="Release|Any CPU" Project="Release|Any CPU|Deploy" />

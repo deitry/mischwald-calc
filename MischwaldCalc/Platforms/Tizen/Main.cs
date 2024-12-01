@@ -1,8 +1,4 @@
-using System;
-using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-
-namespace MischwaldCalc;
+namespace MischwaldCalc.Platforms.Tizen;
 
 class Program : MauiApplication
 {

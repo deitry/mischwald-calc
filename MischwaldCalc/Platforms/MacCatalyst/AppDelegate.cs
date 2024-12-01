@@ -1,6 +1,4 @@
-﻿using Foundation;
-
-namespace MischwaldCalc;
+﻿namespace MischwaldCalc.Platforms.MacCatalyst;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

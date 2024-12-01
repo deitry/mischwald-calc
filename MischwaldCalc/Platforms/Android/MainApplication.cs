@@ -1,7 +1,4 @@
-﻿using Android.App;
-using Android.Runtime;
-
-namespace MischwaldCalc;
+﻿namespace MischwaldCalc.Platforms.Android;
 
 [Application]
 public class MainApplication : MauiApplication
