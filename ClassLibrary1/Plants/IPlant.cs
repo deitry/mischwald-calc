@@ -2,4 +2,4 @@
 
 namespace ClassLibrary1.Plants;
 
-public interface IPlant : IAnimalOrPlant;
+public interface IPlant : IBottom;

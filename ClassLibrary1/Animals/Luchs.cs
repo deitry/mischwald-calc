@@ -4,6 +4,8 @@ namespace ClassLibrary1.AnimalsAndPlants;
 
 public class Luchs : IAnimal
 {
+    public T_Tree? Parent { get; set; }
+
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         var hasReh = ctx.CurrentPlayer.GetAllCards<Reh>().Count > 0;

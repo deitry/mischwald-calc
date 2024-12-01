@@ -2,6 +2,8 @@
 
 public class Feuersalamander : ILizard, IBottom
 {
+    public T_Tree? Parent { get; set; }
+
     public int GetTypePoints(PointsCalculationContext ctx)
     {
         var salamanders = ctx.CurrentPlayer.GetAllCards<Feuersalamander>();

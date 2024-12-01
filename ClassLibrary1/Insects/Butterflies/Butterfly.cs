@@ -4,6 +4,8 @@ namespace ClassLibrary1.Butterflies;
 
 public class Butterfly : IInsect, ITop
 {
+    public T_Tree? Parent { get; set; }
+
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 0;

@@ -1,3 +1,5 @@
-﻿namespace ClassLibrary1.Lizards;
+﻿using ClassLibrary1.AnimalsAndPlants;
 
-public interface ILizard : IActivePart;
+namespace ClassLibrary1.Lizards;
+
+public interface ILizard : IBottom;

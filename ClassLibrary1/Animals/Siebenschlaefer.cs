@@ -2,6 +2,8 @@
 
 public class Siebenschlaefer : IAnimal
 {
+    public T_Tree? Parent { get; set; }
+
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         throw new NotImplementedException();

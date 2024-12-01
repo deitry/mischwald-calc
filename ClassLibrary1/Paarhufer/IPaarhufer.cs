@@ -2,4 +2,4 @@
 
 namespace ClassLibrary1.Paarhufer;
 
-public interface IPaarhufer : IAnimalOrPlant, ILeftRight;
+public interface IPaarhufer : ILeftRight;

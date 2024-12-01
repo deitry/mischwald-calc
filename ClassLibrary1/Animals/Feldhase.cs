@@ -2,7 +2,7 @@
 
 public class Feldhase(int count = 1) : IAnimal
 {
-    // public required T_Tree Parent { get; init; }
+    public T_Tree? Parent { get; set; }
 
     public List<IAnimalOrPlant> UnderlyingCards => Enumerable.Repeat<IAnimalOrPlant>(this, Count).ToList();
 
