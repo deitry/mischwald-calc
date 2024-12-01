@@ -61,13 +61,6 @@ public class HaresTests
             ],
         };
 
-        var ctx = new GameContext
-        {
-            Players = [
-                player
-            ],
-        };
-
-        Assert.That(ctx.GetPoints(player), Is.EqualTo(expectedPoints));
+        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(expectedPoints));
     }
 }

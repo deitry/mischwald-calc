@@ -1,3 +1,5 @@
-﻿namespace ClassLibrary1.Paarhufer;
+﻿using ClassLibrary1.AnimalsAndPlants;
 
-public interface IPaarhufer : IActivePart, ILeftRight;
+namespace ClassLibrary1.Paarhufer;
+
+public interface IPaarhufer : IAnimalOrPlant, ILeftRight;

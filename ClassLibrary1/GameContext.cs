@@ -11,4 +11,16 @@ public record GameContext
             CurrentPlayer = player,
         });
     }
+
+    public static int CalculatePoints(Player player)
+    {
+        var ctx = new GameContext
+        {
+            Players = [
+                player
+            ],
+        };
+
+        return ctx.GetPoints(player);
+    }
 }

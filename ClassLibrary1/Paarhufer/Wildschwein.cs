@@ -4,6 +4,7 @@ public class Wildschwein : IPaarhufer
 {
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
-        throw new NotImplementedException();
+        var hasFrischling = ctx.CurrentPlayer.GetAllCards<Frischling>().Count > 0;
+        return hasFrischling ? 10 : 0;
     }
 }
