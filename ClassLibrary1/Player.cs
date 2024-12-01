@@ -34,4 +34,9 @@ public class Player
     }
 
     public List<T_Tree> Trees { get; init; } = new();
+
+    public List<IActivePart> GetAllCards(Func<IActivePart, bool> predicate)
+    {
+        return GetAllCards().Where(predicate).ToList();
+    }
 }

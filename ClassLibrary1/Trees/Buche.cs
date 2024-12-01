@@ -1,12 +1,15 @@
-﻿namespace ClassLibrary1;
+﻿using ClassLibrary1.AnimalsAndPlants;
+
+namespace ClassLibrary1;
 
 public class Buche : T_Tree
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Buche;
 
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        var cards = ctx.CurrentPlayer.GetAllCards();
-        return cards.Count(c => c.TreeType == TreeTypeEnum.Buche);
+        var buche = ctx.CurrentPlayer.GetAllCards(c => c.TreeType == TreeTypeEnum.Buche);
+
+        return buche.Count >= 4 ? 5 : 0;
     }
 }

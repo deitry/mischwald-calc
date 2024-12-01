@@ -1,3 +1,3 @@
 ﻿namespace ClassLibrary1.Butterflies;
 
-public class Trauermantel : Butterfly;
+public sealed class Trauermantel : Butterfly;
