@@ -16,7 +16,7 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new Feldhase
+                    Left = new FeldhaseStack
                     {
                         Count = hares,
                     },
@@ -45,7 +45,7 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new Feldhase
+                    Left = new FeldhaseStack
                     {
                         Count = hares,
                     },
@@ -76,14 +76,14 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new Feldhase
+                    Left = new FeldhaseStack
                     {
                         Count = haresOnFirstTree,
                     },
                 },
                 new Eiche
                 {
-                    Right = new Feldhase
+                    Right = new FeldhaseStack
                     {
                         Count = haresOnSecondTree,
                     },

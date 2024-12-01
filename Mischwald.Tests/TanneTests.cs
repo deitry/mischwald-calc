@@ -45,7 +45,7 @@ public class TanneTests
             [
                 new Tanne
                 {
-                    Left = new Feldhase(count: 3),
+                    Left = new FeldhaseStack(count: 3),
                 }
             ],
         };

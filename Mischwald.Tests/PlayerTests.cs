@@ -29,7 +29,7 @@ public class PlayerTests
             [
                 new Birke
                 {
-                    Left = new Feldhase(count: 4),
+                    Left = new FeldhaseStack(count: 4),
                     Top = new GrosserFuchs(),
                 },
             ],

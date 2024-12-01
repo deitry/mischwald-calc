@@ -1,19 +1,16 @@
-﻿using Mischwald.Trees;
+﻿using Mischwald.Plants;
+using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Feldhase(int count = 1) : IAnimal, ILeftRight
+public class Feldhase(FeldhaseStack stack) : IAnimal
 {
-    public T_Tree? Parent { get; set; }
+    public T_Tree? Parent { get; set; } = stack.Parent;
 
-    public List<IAnimalOrPlant> UnderlyingCards => Enumerable.Repeat<IAnimalOrPlant>(this, Count).ToList();
-
-    public int Count { get; init; } = count;
+    public FeldhaseStack? ParentStack { get; set; } = stack;
 
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         return ctx.CurrentPlayer.GetAllCards<Feldhase>().Count;
     }
-
-    public int GetTypePoints(PointsCalculationContext ctx) => 0;
 }

@@ -1,3 +1,3 @@
 ﻿namespace Mischwald.Lizards;
 
-public interface ILizard : IBottom;
+public interface ILizard : IAnimalOrPlant;
