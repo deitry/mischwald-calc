@@ -1,4 +1,5 @@
-﻿using Mischwald.Trees;
+﻿using System.Diagnostics;
+using Mischwald.Trees;
 
 namespace Mischwald;
 
@@ -42,5 +43,21 @@ public class Player
     public List<IActivePart> GetAllCards(Func<IActivePart, bool> predicate)
     {
         return GetAllCards().Where(predicate).ToList();
+    }
+
+    public bool HasAllTypesOfTrees
+    {
+        get
+        {
+            var distinctTrees = Trees
+                .Where(t => t.TreeType != TreeTypeEnum.None)
+                .DistinctBy(t => t.TreeType);
+
+            var distinctCount = distinctTrees.Count();
+
+            Debug.Assert(distinctCount <= 8, "Unexpected tree type");
+
+            return distinctCount == 8;
+        }
     }
 }
