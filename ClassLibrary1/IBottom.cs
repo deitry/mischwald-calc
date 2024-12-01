@@ -1,6 +1,5 @@
-﻿namespace ClassLibrary1;
+﻿using ClassLibrary1.AnimalsAndPlants;
 
-public interface IBottom
-{
+namespace ClassLibrary1;
 
-}
+public interface IBottom : IAnimalOrPlant;

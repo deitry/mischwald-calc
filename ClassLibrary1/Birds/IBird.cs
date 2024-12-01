@@ -1,6 +1,8 @@
-﻿namespace ClassLibrary1.Birds;
+﻿using ClassLibrary1.AnimalsAndPlants;
 
-public interface IBird : IActivePart
+namespace ClassLibrary1.Birds;
+
+public interface IBird : ITop
 {
 
 }

@@ -10,4 +10,5 @@ public enum TreeTypeEnum
     Eiche,
     Kastanie,
     Tanne,
+    Linde
 }
