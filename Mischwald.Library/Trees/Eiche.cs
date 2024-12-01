@@ -4,7 +4,7 @@ namespace Mischwald.Trees;
 
 public class Eiche : T_Tree, ITypedTree
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         var distinctTrees = ctx.CurrentPlayer.Trees
             .Where(t => t.TreeType != TreeTypeEnum.None)
