@@ -1,8 +1,8 @@
 ﻿<Solution>
   <Project Path="Mischwald.Library\Mischwald.Library.csproj" Type="Classic C#" />
+  <Project Path="Mischwald.Tests\Mischwald.Tests.csproj" Type="Classic C#" />
   <Project Path="MischwaldCalc\MischwaldCalc.csproj">
     <Configuration Solution="Debug|Any CPU" Project="Debug|Any CPU|Deploy" />
     <Configuration Solution="Release|Any CPU" Project="Release|Any CPU|Deploy" />
   </Project>
-  <Project Path="TestProject1\TestProject1.csproj" Type="Classic C#" />
 </Solution>

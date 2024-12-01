@@ -1,7 +1,6 @@
-﻿using Mischwald;
-using Mischwald.Trees;
+﻿using Mischwald.Trees;
 
-namespace TestProject1;
+namespace Mischwald.Tests;
 
 public class BucheTests
 {

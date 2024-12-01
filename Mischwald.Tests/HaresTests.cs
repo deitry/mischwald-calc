@@ -1,8 +1,7 @@
-﻿using Mischwald;
-using Mischwald.Animals;
+﻿using Mischwald.Animals;
 using Mischwald.Trees;
 
-namespace TestProject1;
+namespace Mischwald.Tests;
 
 public class HaresTests
 {

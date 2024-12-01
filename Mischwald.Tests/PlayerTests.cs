@@ -1,9 +1,8 @@
-﻿using Mischwald;
-using Mischwald.Animals;
+﻿using Mischwald.Animals;
 using Mischwald.Insects.Butterflies;
 using Mischwald.Trees;
 
-namespace TestProject1;
+namespace Mischwald.Tests;
 
 public class PlayerTests
 {

@@ -1,8 +1,7 @@
-﻿using Mischwald;
-using Mischwald.Paarhufer;
+﻿using Mischwald.Paarhufer;
 using Mischwald.Trees;
 
-namespace TestProject1;
+namespace Mischwald.Tests;
 
 public class AnimalsTests
 {

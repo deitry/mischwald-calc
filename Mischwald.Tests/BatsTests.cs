@@ -1,8 +1,7 @@
-﻿using Mischwald;
-using Mischwald.Bats;
+﻿using Mischwald.Bats;
 using Mischwald.Trees;
 
-namespace TestProject1;
+namespace Mischwald.Tests;
 
 public class BatsTests
 {
