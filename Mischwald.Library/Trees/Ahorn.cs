@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Trees;
 
-public class Ahorn : T_Tree, IActivePart
+public class Ahorn : T_Tree, ITypedTree
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Ahorn;
 

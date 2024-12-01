@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Trees;
 
-public class Linde : T_Tree
+public class Linde : T_Tree, ITypedTree
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Linde;
 

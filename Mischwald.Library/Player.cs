@@ -24,11 +24,11 @@ public class Player
     /// Все карты определённого типа
     /// </summary>
     public List<IActivePart> GetAllCards<T>()
-        where T : class, IActivePart
+        where T : IActivePart
     {
-        var total = new List<IActivePart>(Trees.OfType<T>());
+        var total = new List<IActivePart>(Trees.OfType<T>().OfType<IActivePart>());
 
-        total.AddRange(Trees.SelectMany(t => t.All.OfType<T>()));
+        total.AddRange(Trees.SelectMany(t => t.All.OfType<T>()).OfType<IActivePart>());
 
         return total;
     }

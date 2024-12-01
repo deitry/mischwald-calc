@@ -1,5 +1,7 @@
 ﻿namespace Mischwald.Trees;
 
+public interface ITypedTree : IActivePart;
+
 public abstract class T_Tree : IActivePart
 {
     public bool Full => Top != null && Bottom != null && Left != null && Right != null;

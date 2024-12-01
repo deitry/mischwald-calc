@@ -2,7 +2,7 @@
 
 namespace Mischwald.Trees;
 
-public class Eiche : T_Tree
+public class Eiche : T_Tree, ITypedTree
 {
     public int GetInstancePoints(PointsCalculationContext ctx)
     {

@@ -1,9 +1,12 @@
-﻿namespace Mischwald.Paarhufer.Hirsch;
+﻿using Mischwald.Trees;
 
-public class Reh : Hirsch
+namespace Mischwald.Paarhufer.Hirsch;
+
+public class Reh<T> : Hirsch
+    where T : ITypedTree
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        throw new NotImplementedException();
+        return 3 * ctx.CurrentPlayer.GetAllCards<T>().Count;
     }
 }

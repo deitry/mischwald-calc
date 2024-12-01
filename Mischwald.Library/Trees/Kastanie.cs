@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Trees;
 
-public class Kastanie : T_Tree
+public class Kastanie : T_Tree, ITypedTree
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Kastanie;
 
