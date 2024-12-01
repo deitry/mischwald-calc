@@ -4,6 +4,8 @@ namespace Mischwald;
 
 public class Player
 {
+    public int CardsInHoehle { get; set; }
+
     public int GetPoints(PointsCalculationContext ctx)
     {
         var allCards = GetAllCards();
@@ -11,6 +13,8 @@ public class Player
 
         var distinctTypes = allCards.DistinctBy(c => c.GetType());
         total += distinctTypes.Sum(type => type.GetTypePoints(ctx));
+
+        total += CardsInHoehle;
 
         return total;
     }
