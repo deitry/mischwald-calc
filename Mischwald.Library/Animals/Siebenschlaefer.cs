@@ -1,18 +1,23 @@
-﻿using Mischwald.Trees;
+﻿using Mischwald.Bats;
+using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Siebenschlaefer : IAnimal
+public class Siebenschlaefer : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
-        throw new NotImplementedException();
+        if (Parent == null)
+            return 0;
 
-        // 15 очков если с другой стороны дерева есть летучая мышь
+        if (Parent.Right == this && Parent.Left is IBat)
+            return 15;
 
-        // TODO: разделять на правую и левую?
-        // TODO: использовать отдельную проперти Parent или искать каждый раз?
+        if (Parent.Left == this && Parent.Right is IBat)
+            return 15;
+
+        return 0;
     }
 }
