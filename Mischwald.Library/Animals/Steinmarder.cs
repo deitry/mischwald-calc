@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 /// <summary>
 /// Куница
 /// </summary>
-public class Steinmarder : IAnimal
+public class Steinmarder : IAnimal, ILeftRight
 {
     public T_Tree? Parent { get; set; }
 

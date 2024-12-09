@@ -2,7 +2,7 @@
 
 namespace Mischwald.Animals;
 
-public class Eichhoernchen : IAnimal
+public class Eichhoernchen : IAnimal, ITop
 {
     public T_Tree? Parent { get; set; }
 
