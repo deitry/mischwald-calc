@@ -2,12 +2,10 @@
 
 namespace Mischwald.Plants;
 
-public class Brombeeren : IPlant
+public class Brombeeren : Plant
 {
-    public T_Tree? Parent { get; set; }
-
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        return 2 * ctx.CurrentPlayer.GetAllCards<IPlant>().Count;
+        return 2 * ctx.CurrentPlayer.GetAllCards<Plant>().Count;
     }
 }

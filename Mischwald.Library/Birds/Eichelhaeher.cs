@@ -2,10 +2,8 @@
 
 namespace Mischwald.Birds;
 
-public class Eichelhaeher : IBird
+public class Eichelhaeher : Bird
 {
-    public T_Tree? Parent { get; set; }
-
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 3;

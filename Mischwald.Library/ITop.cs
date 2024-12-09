@@ -3,4 +3,4 @@
 /// <summary>
 /// Карты сверху
 /// </summary>
-public interface ITop : IAnimalOrPlant;
+public interface ITop : IChild;

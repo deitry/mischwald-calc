@@ -5,8 +5,6 @@ namespace Mischwald.Lizards;
 
 public class Erdkroete : ILizard
 {
-    public T_Tree? Parent { get; set; }
-
     public ErdkroeteStack? ParentStack { get; set; }
 
     public int GetInstancePoints(PointsCalculationContext ctx)

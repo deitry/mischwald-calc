@@ -3,4 +3,4 @@
 /// <summary>
 /// С символом лапки
 /// </summary>
-public interface IAnimal : IAnimalOrPlant;
+public abstract class IAnimal : AnimalOrPlant;

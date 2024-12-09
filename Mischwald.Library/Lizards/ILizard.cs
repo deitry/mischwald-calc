@@ -1,3 +1,3 @@
 ﻿namespace Mischwald.Lizards;
 
-public interface ILizard : IAnimalOrPlant;
+public abstract class ILizard : AnimalOrPlant;

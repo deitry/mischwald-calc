@@ -3,13 +3,11 @@ using Mischwald.Trees;
 
 namespace Mischwald.Birds;
 
-public sealed class Gimpel : IBird
+public sealed class Gimpel : Bird
 {
-    public T_Tree? Parent { get; set; }
-
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        var insects = ctx.CurrentPlayer.GetAllCards<IInsect>();
+        var insects = ctx.CurrentPlayer.GetAllCards<Insect>();
 
         return 2 * insects.Count;
     }

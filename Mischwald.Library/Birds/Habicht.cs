@@ -2,12 +2,10 @@
 
 namespace Mischwald.Birds;
 
-public class Habicht : IBird
+public class Habicht : Bird
 {
-    public T_Tree? Parent { get; set; }
-
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        return 3 * ctx.CurrentPlayer.GetAllCards<IBird>().Count;
+        return 3 * ctx.CurrentPlayer.GetAllCards<Bird>().Count;
     }
 }

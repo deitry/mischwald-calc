@@ -2,7 +2,7 @@
 
 namespace Mischwald.Paarhufer;
 
-public class Wildschwein : IPaarhufer
+public class Wildschwein : Paarhufer
 {
     public T_Tree? Parent { get; set; }
 

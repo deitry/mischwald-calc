@@ -5,8 +5,6 @@ namespace Mischwald.Animals;
 
 public class Luchs : IAnimal, ILeftRight
 {
-    public T_Tree? Parent { get; set; }
-
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         var hasReh = ctx.CurrentPlayer.GetAllCards<Reh>().Count > 0;

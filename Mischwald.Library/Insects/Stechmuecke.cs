@@ -3,12 +3,10 @@ using Mischwald.Trees;
 
 namespace Mischwald.Insects;
 
-public class Stechmuecke : IInsect, ILeftRight
+public class Stechmuecke : Insect, ILeftRight
 {
-    public T_Tree? Parent { get; set; }
-
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        return 1 * ctx.CurrentPlayer.GetAllCards<IBat>().Count;
+        return 1 * ctx.CurrentPlayer.GetAllCards<Bat>().Count;
     }
 }

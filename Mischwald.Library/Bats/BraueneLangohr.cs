@@ -2,7 +2,4 @@
 
 namespace Mischwald.Bats;
 
-public class BraueneLangohr : IBat
-{
-    public T_Tree? Parent { get; set; }
-}
+public class BraueneLangohr : Bat;

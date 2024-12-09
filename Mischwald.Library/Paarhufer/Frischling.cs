@@ -2,7 +2,7 @@
 
 namespace Mischwald.Paarhufer;
 
-public class Frischling : IPaarhufer
+public class Frischling : Paarhufer
 {
     public T_Tree? Parent { get; set; }
 

@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Plants;
 
-public class Baumfarn : IPlant
+public class Baumfarn : Plant
 {
     public T_Tree? Parent { get; set; }
 

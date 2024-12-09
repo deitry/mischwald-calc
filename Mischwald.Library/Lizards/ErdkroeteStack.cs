@@ -10,15 +10,13 @@ public class ErdkroeteStack : IBottom, ICardStack
 
     public bool IsFull => Slot1 != null && Slot2 != null;
 
-    public ErdkroeteStack(int count = 1)
+    public ErdkroeteStack(IReadOnlyCollection<Erdkroete> erdkroetes)
     {
-        if (count > 2)
-            throw new ArgumentException("Count must be greater than 2", nameof(count));
+        if (erdkroetes.Count > 2)
+            throw new ArgumentException("Count must be greater than 2", nameof(erdkroetes));
 
-        for (var i = 0; i < count; i++)
-        {
-            Add(new Erdkroete());
-        }
+        foreach (var e in erdkroetes)
+            Add(e);
     }
 
     public void Add(Erdkroete erdkroete)
@@ -63,11 +61,11 @@ public class ErdkroeteStack : IBottom, ICardStack
         }
     }
 
-    public List<IAnimalOrPlant> UnderlyingCards
+    public List<IChild> UnderlyingCards
     {
         get
         {
-            var list = new List<IAnimalOrPlant>();
+            var list = new List<IChild>();
             if (Slot1 != null) list.Add(Slot1);
             if (Slot2 != null) list.Add(Slot2);
             return list;

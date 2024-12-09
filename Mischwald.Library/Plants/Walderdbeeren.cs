@@ -2,7 +2,7 @@
 
 namespace Mischwald.Plants;
 
-public class Walderdbeeren : IPlant
+public class Walderdbeeren : Plant
 {
     public T_Tree? Parent { get; set; }
 

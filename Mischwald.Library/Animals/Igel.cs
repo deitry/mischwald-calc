@@ -3,10 +3,8 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Igel : IBottom, IAnimal
+public class Igel : IAnimal, IBottom
 {
-    public T_Tree? Parent { get; set; }
-
     public int GetInstancePoints(PointsCalculationContext ctx)
     {
         var butterflies = ctx.CurrentPlayer.GetAllCards<Butterfly>();

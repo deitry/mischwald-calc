@@ -6,11 +6,9 @@ namespace Mischwald.Insects;
 /// <summary>
 /// Жук-олень
 /// </summary>
-public class Hirschkaefer : IInsect
+public class Hirschkaefer : Insect
 {
-    public T_Tree? Parent { get; set; }
-
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 1 * ctx.CurrentPlayer.GetAllCards<IAnimal>().Count;
     }

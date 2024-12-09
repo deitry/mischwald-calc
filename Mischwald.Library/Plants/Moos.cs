@@ -2,7 +2,7 @@
 
 namespace Mischwald.Plants;
 
-public class Moos : IPlant, IBottom
+public class Moos : Plant, IBottom
 {
     public T_Tree? Parent { get; set; }
 

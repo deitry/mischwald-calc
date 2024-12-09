@@ -1,3 +1,3 @@
 ﻿namespace Mischwald;
 
-public interface IBottom : IAnimalOrPlant;
+public interface IBottom : IChild;

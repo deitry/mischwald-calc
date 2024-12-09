@@ -59,11 +59,11 @@ public abstract class T_Tree : IActivePart
         }
     }
 
-    public List<IAnimalOrPlant> All
+    public List<IChild> All
     {
         get
         {
-            var result = new List<IAnimalOrPlant>();
+            var result = new List<IChild>();
 
             if (Top != null) result.AddRange(Top.UnderlyingCards);
             if (Bottom != null) result.AddRange(Bottom.UnderlyingCards);
