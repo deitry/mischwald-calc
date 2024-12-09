@@ -3,9 +3,9 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Feldhase(FeldhaseStack stack) : IAnimal
+public class Feldhase : IAnimal
 {
-    public FeldhaseStack? ParentStack { get; set; } = stack;
+    public FeldhaseStack? ParentStack { get; set; }
 
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

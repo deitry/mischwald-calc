@@ -7,7 +7,7 @@ public class Erdkroete : ILizard
 {
     public ErdkroeteStack? ParentStack { get; set; }
 
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return ParentStack?.IsFull == true ? 5 : 0;
     }

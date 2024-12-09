@@ -28,7 +28,7 @@ public class TanneTests
             [
                 new Tanne
                 {
-                    Left = new Braunbaer(),
+                    Left = new Braunbaer() {Symbol = TreeTypeEnum.Ahorn},
                 }
             ],
         };
@@ -45,7 +45,8 @@ public class TanneTests
             [
                 new Tanne
                 {
-                    Left = new FeldhaseStack(count: 3),
+                    Left = new FeldhaseStack(Enumerable.Repeat(
+                        new Feldhase { Symbol = TreeTypeEnum.Ahorn }, 3).ToList()),
                 }
             ],
         };

@@ -2,7 +2,7 @@
 
 public abstract class Bat : AnimalOrPlant, ILeftRight
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         var bats = ctx.CurrentPlayer.GetAllCards<Bat>();
         var distinctBats = bats.DistinctBy(b => b.GetType());

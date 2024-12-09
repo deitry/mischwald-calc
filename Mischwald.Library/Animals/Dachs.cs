@@ -7,7 +7,7 @@ namespace Mischwald.Animals;
 /// </summary>
 public class Dachs : IAnimal, ILeftRight
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 2;
     }

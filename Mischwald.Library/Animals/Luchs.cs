@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 
 public class Luchs : IAnimal, ILeftRight
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         var hasReh = ctx.CurrentPlayer.GetAllCards<Reh>().Count > 0;
 

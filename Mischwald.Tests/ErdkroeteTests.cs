@@ -14,7 +14,9 @@ public class ErdkroeteTests
             [
                 new DefaultTree
                 {
-                    Bottom = new ErdkroeteStack(count: 1),
+                    Bottom = new ErdkroeteStack([
+                        new Erdkroete() {Symbol = TreeTypeEnum.Ahorn },
+                    ]),
                 },
             ],
         };
@@ -31,11 +33,15 @@ public class ErdkroeteTests
             [
                 new DefaultTree
                 {
-                    Bottom = new ErdkroeteStack(count: 1),
+                    Bottom = new ErdkroeteStack([
+                        new Erdkroete() {Symbol = TreeTypeEnum.Ahorn },
+                    ]),
                 },
                 new DefaultTree
                 {
-                    Bottom = new ErdkroeteStack(count: 1),
+                    Bottom = new ErdkroeteStack([
+                        new Erdkroete() {Symbol = TreeTypeEnum.Ahorn },
+                    ]),
                 },
             ],
         };
@@ -51,7 +57,9 @@ public class ErdkroeteTests
             [
                 new DefaultTree
                 {
-                    Bottom = new ErdkroeteStack(count: 2),
+                    Bottom = new ErdkroeteStack([
+                        new Erdkroete() {Symbol = TreeTypeEnum.Ahorn },
+                    ]),
                 },
             ],
         };

@@ -4,7 +4,7 @@ namespace Mischwald.Birds;
 
 public class Buchfink : Bird
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return Parent is Buche ? 5 : 0;
     }

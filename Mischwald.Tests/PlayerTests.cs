@@ -29,8 +29,9 @@ public class PlayerTests
             [
                 new Birke
                 {
-                    Left = new FeldhaseStack(count: 4),
-                    Top = new GrosserFuchs(),
+                    Left = new FeldhaseStack(Enumerable.Repeat(
+                        new Feldhase { Symbol = TreeTypeEnum.Ahorn }, 4).ToList()),
+                    Top = new GrosserFuchs() {Symbol = TreeTypeEnum.Ahorn},
                 },
             ],
         };

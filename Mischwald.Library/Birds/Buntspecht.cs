@@ -7,12 +7,12 @@ namespace Mischwald.Birds;
 /// </summary>
 public class Buntspecht : Bird
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return ctx.HasMostOfTrees ? 10 : 0;
     }
 
-    public int GetTypePoints(PointsCalculationContext ctx)
+    public override int GetTypePoints(PointsCalculationContext ctx)
     {
         return 0;
     }

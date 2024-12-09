@@ -7,7 +7,7 @@ namespace Mischwald.Animals;
 /// </summary>
 public class Maulwurf : IAnimal
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 0;
     }

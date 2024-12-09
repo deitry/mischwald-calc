@@ -4,7 +4,7 @@ namespace Mischwald.Birds;
 
 public class Eichelhaeher : Bird
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 3;
     }

@@ -15,7 +15,7 @@ public class DamhirschTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Damhirsch(),
+                    Left = new Damhirsch() { Symbol = TreeTypeEnum.Ahorn },
                 },
             ],
         };
@@ -31,8 +31,8 @@ public class DamhirschTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Damhirsch(),
-                    Right = new Frischling(),
+                    Left = new Damhirsch() { Symbol = TreeTypeEnum.Ahorn },
+                    Right = new Frischling() { Symbol = TreeTypeEnum.Ahorn },
                 },
             ],
         };
@@ -48,15 +48,15 @@ public class DamhirschTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Damhirsch(),
+                    Left = new Damhirsch() { Symbol = TreeTypeEnum.Ahorn },
                 },
                 new DefaultTree
                 {
-                    Right = new Reh<Tanne>(),
+                    Right = new Reh() { Symbol = TreeTypeEnum.Tanne },
                 },
             ],
         };
 
-        Assert.That(GameContext.CalculatePoints(p), Is.EqualTo(3 * 2));
+        Assert.That(GameContext.CalculatePoints(p), Is.EqualTo(3 * 2 + 3));
     }
 }

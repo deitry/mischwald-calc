@@ -16,10 +16,9 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new FeldhaseStack
-                    {
-                        Count = hares,
-                    },
+                    Left = new FeldhaseStack(
+                        Enumerable.Repeat(
+                            new Feldhase { Symbol = TreeTypeEnum.Ahorn }, hares).ToList()),
                 }
             ],
         };
@@ -45,11 +44,9 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new FeldhaseStack
-                    {
-                        Count = hares,
-                    },
-                    Right = new Fuchs(),
+                    Left = new FeldhaseStack(Enumerable.Repeat(
+                        new Feldhase { Symbol = TreeTypeEnum.Ahorn }, hares).ToList()),
+                    Right = new Fuchs() { Symbol = TreeTypeEnum.Ahorn },
                 }
             ],
         };
@@ -76,17 +73,13 @@ public class HaresTests
             Trees = [
                 new Eiche
                 {
-                    Left = new FeldhaseStack
-                    {
-                        Count = haresOnFirstTree,
-                    },
+                    Left = new FeldhaseStack(Enumerable.Repeat(
+                        new Feldhase { Symbol = TreeTypeEnum.Ahorn }, haresOnFirstTree).ToList()),
                 },
                 new Eiche
                 {
-                    Right = new FeldhaseStack
-                    {
-                        Count = haresOnSecondTree,
-                    },
+                    Right = new FeldhaseStack(Enumerable.Repeat(
+                        new Feldhase { Symbol = TreeTypeEnum.Ahorn }, haresOnSecondTree).ToList()),
                 },
             ],
         };

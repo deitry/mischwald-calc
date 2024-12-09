@@ -13,7 +13,7 @@ public class WildschweinTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Wildschwein(),
+                    Left = new Wildschwein() {Symbol = TreeTypeEnum.Ahorn},
                 },
             ],
         };
@@ -29,8 +29,8 @@ public class WildschweinTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Wildschwein(),
-                    Right = new Frischling(),
+                    Left = new Wildschwein() {Symbol = TreeTypeEnum.Ahorn},
+                    Right = new Frischling() {Symbol = TreeTypeEnum.Ahorn},
                 },
             ],
         };

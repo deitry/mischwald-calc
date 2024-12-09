@@ -15,7 +15,7 @@ public class LuchsTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Wildschwein(),
+                    Left = new Wildschwein() {Symbol = TreeTypeEnum.Ahorn},
                 },
             ],
         };
@@ -31,13 +31,13 @@ public class LuchsTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Luchs(),
-                    Right = new Reh<Tanne>(),
+                    Left = new Luchs() {Symbol = TreeTypeEnum.Ahorn},
+                    Right = new Reh()  {Symbol = TreeTypeEnum.Tanne},
                 },
             ],
         };
 
-        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10));
+        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10 + 3));
     }
 
     [Test]
@@ -48,13 +48,13 @@ public class LuchsTests
             Trees = [
                 new Tanne
                 {
-                    Left = new Luchs(),
-                    Right = new Reh<Tanne>(),
+                    Left = new Luchs() {Symbol = TreeTypeEnum.Ahorn},
+                    Right = new Reh() {Symbol = TreeTypeEnum.Tanne},
                 },
             ],
         };
 
-        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10 + 3 * 1 + 2 * 2));
+        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10 + 3 * 2 + 2 * 2));
     }
 
     [Test]
@@ -65,16 +65,16 @@ public class LuchsTests
             Trees = [
                 new DefaultTree
                 {
-                    Left = new Luchs(),
-                    Right = new Reh<Tanne>(),
+                    Left = new Luchs() {Symbol = TreeTypeEnum.Ahorn},
+                    Right = new Reh() {Symbol = TreeTypeEnum.Tanne},
                 },
                 new DefaultTree
                 {
-                    Right = new Reh<Tanne>(),
+                    Right = new Reh() {Symbol = TreeTypeEnum.Tanne},
                 },
             ],
         };
 
-        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10));
+        Assert.That(GameContext.CalculatePoints(player), Is.EqualTo(10 + 2 * 3 * 2));
     }
 }

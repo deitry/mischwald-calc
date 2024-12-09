@@ -14,7 +14,7 @@ public class BatsTests
             [
                 new DefaultTree
                 {
-                    Left = new Hufeisennase(),
+                    Left = new Hufeisennase() { Symbol = TreeTypeEnum.Ahorn },
                 }
             ],
         };

@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 
 public class Siebenschlaefer : IAnimal, ILeftRight
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         if (Parent == null)
             return 0;

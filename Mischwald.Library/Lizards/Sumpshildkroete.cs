@@ -9,7 +9,7 @@ public class Sumpshildkroete : ILizard, IBottom
 {
     public T_Tree? Parent { get; set; }
 
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 5;
     }

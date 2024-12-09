@@ -6,10 +6,10 @@ public class Frischling : Paarhufer
 {
     public T_Tree? Parent { get; set; }
 
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 1;
     }
 
-    public int GetTypePoints(PointsCalculationContext ctx) => 0;
+    public override int GetTypePoints(PointsCalculationContext ctx) => 0;
 }

@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 
 public sealed class Wolf : IAnimal, ILeftRight
 {
-    public int GetInstancePoints(PointsCalculationContext ctx)
+    public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         var hirschen = ctx.CurrentPlayer.GetAllCards<Hirsch>();
 

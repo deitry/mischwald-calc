@@ -25,7 +25,7 @@ public class HolzbieneTests
                 new Buche(),
                 new Buche()
                 {
-                    Right = new Holzbiene(),
+                    Right = new Holzbiene() {Symbol = TreeTypeEnum.Ahorn},
                 },
                 new Buche(),
             },
@@ -39,12 +39,12 @@ public class HolzbieneTests
             {
                 new Buche
                 {
-                    Right = new Holzbiene(),
+                    Right = new Holzbiene() {Symbol = TreeTypeEnum.Ahorn},
                 },
                 new Buche
                 {
-                    Left = new Holzbiene(),
-                    Right = new Holzbiene(),
+                    Left = new Holzbiene() {Symbol = TreeTypeEnum.Ahorn},
+                    Right = new Holzbiene() {Symbol = TreeTypeEnum.Ahorn},
                 },
             },
             /* expectedPoints */ 10,
@@ -57,7 +57,7 @@ public class HolzbieneTests
             {
                 new DefaultTree
                 {
-                    Right = new Holzbiene(),
+                    Right = new Holzbiene() {Symbol = TreeTypeEnum.Ahorn},
                 },
                 new Buche(),
                 new Buche(),
