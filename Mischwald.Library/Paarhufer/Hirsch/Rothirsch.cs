@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Paarhufer.Hirsch;
 
-public sealed class Rothirsch : Hirsch
+public sealed class Rothirsch : Hirsch, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

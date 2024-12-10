@@ -2,7 +2,7 @@
 
 namespace Mischwald.Trees;
 
-public class Eiche : T_Tree, ITypedTree
+public class Eiche : T_Tree, ITypedTree, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

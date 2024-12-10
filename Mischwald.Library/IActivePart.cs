@@ -18,10 +18,6 @@ public interface IActivePart
     /// </summary>
     int GetInstancePoints(PointsCalculationContext ctx) => 0;
 
-    /// <summary>
-    /// Сколько дают все карты такого типа
-    /// </summary>
-    int GetTypePoints(PointsCalculationContext ctx) => 0;
-
     TreeTypeEnum TreeType => TreeTypeEnum.None;
+    TreeTypeEnum Symbol => TreeType;
 }

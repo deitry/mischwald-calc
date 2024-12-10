@@ -2,4 +2,4 @@
 
 namespace Mischwald.Bats;
 
-public class BraueneLangohr : Bat;
+public class BraueneLangohr : Bat, ICardName;

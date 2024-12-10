@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Trees;
 
-public class Tanne : T_Tree, ITypedTree
+public class Tanne : T_Tree, ITypedTree, ICardName
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Tanne;
 

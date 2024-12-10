@@ -1,19 +1,34 @@
 ﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
+using Mischwald.Animals;
+using Mischwald.Insects;
+using Mischwald.Insects.Butterflies;
+using Mischwald.Lizards;
+using Mischwald.Paarhufer.Hirsch;
+using Mischwald.Plants;
 using Mischwald.Trees;
+using NUnit.Framework;
 
 namespace Mischwald;
 
 public class Player
 {
+    public string PlayerName { get; init; } = "TestPlayer";
     public int CardsInHoehle { get; set; }
 
     public int GetPoints(PointsCalculationContext ctx)
     {
+        var intermediate = IntermediateTotal.From(ctx);
+
         var allCards = GetAllCards();
         var total = allCards.Sum(c => c.GetInstancePoints(ctx));
 
-        var distinctTypes = allCards.DistinctBy(c => c.GetType());
-        total += distinctTypes.Sum(type => type.GetTypePoints(ctx));
+        total += Butterfly.GetTypePoints(ctx);
+        total += Gluewuermchen.GetTypePoints(ctx);
+        total += Feuersalamander.GetTypePoints(ctx);
+        total += Kastanie.GetTypePoints(ctx);
+
+        Debug.Assert(intermediate.TotalPoints == total);
 
         total += CardsInHoehle;
 
@@ -23,24 +38,16 @@ public class Player
     /// <summary>
     /// Вообще все карты этого игрока
     /// </summary>
-    public List<IActivePart> GetAllCards() => GetAllCards<IActivePart>();
+    public IReadOnlyCollection<IActivePart> GetAllCards() => GetAllCards<IActivePart>();
 
     /// <summary>
     /// Все карты определённого типа
     /// </summary>
-    public List<IActivePart> GetAllCards<T>()
-        where T : IActivePart
-    {
-        var total = new List<IActivePart>(Trees.OfType<T>().OfType<IActivePart>());
+    public IReadOnlyCollection<IActivePart> GetAllCards<T>() where T : IActivePart => GetAllCards(typeof(T));
 
-        total.AddRange(Trees.SelectMany(t => t.All.OfType<T>()).OfType<IActivePart>());
+    public List<T_Tree> Trees { get; init; } = [];
 
-        return total;
-    }
-
-    public List<T_Tree> Trees { get; init; } = new();
-
-    public List<IActivePart> GetAllCards(Func<IActivePart, bool> predicate)
+    public IReadOnlyCollection<IActivePart> GetAllCards(Func<IActivePart, bool> predicate)
     {
         return GetAllCards().Where(predicate).ToList();
     }
@@ -49,15 +56,25 @@ public class Player
     {
         get
         {
-            var distinctTrees = Trees
-                .Where(t => t.TreeType != TreeTypeEnum.None)
-                .DistinctBy(t => t.TreeType);
+            var distinctTrees = Trees.Where(t => t.TreeType != TreeTypeEnum.None).DistinctBy(t => t.TreeType).ToList();
 
-            var distinctCount = distinctTrees.Count();
-
-            Debug.Assert(distinctCount <= 8, "Unexpected tree type");
-
-            return distinctCount == 8;
+            return distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Ahorn)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Tanne)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Birke)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Buche)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Douglasie)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Eiche)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Kastanie)
+                && distinctTrees.Any(t => t.TreeType == TreeTypeEnum.Linde);
         }
+    }
+
+    public IReadOnlyCollection<IActivePart> GetAllCards(Type type)
+    {
+        var total = new List<IActivePart>(Trees.OfType(type).NotNull());
+
+        total.AddRange(Trees.SelectMany(t => t.All.OfType(type)).OfType<IActivePart>());
+
+        return total;
     }
 }

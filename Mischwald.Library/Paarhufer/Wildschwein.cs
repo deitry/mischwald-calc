@@ -2,10 +2,8 @@
 
 namespace Mischwald.Paarhufer;
 
-public class Wildschwein : Paarhufer
+public class Wildschwein : Paarhufer, ICardName
 {
-    public T_Tree? Parent { get; set; }
-
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         var hasFrischling = ctx.CurrentPlayer.GetAllCards<Frischling>().Count > 0;

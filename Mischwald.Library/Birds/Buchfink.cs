@@ -2,7 +2,7 @@
 
 namespace Mischwald.Birds;
 
-public class Buchfink : Bird
+public class Buchfink : Bird, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

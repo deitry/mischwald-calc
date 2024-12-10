@@ -3,4 +3,4 @@
 /// <summary>
 /// С символом лапки
 /// </summary>
-public abstract class IAnimal : AnimalOrPlant;
+public abstract class AbstractAnimal : AnimalOrPlant;

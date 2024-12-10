@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Birds;
 
-public sealed class Gimpel : Bird
+public sealed class Gimpel : Bird, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

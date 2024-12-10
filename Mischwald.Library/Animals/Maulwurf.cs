@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 /// <summary>
 /// Крот
 /// </summary>
-public class Maulwurf : IAnimal
+public class Maulwurf : AbstractAnimal, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

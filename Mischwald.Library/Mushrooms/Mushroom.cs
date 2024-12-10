@@ -2,7 +2,4 @@
 
 namespace Mischwald.Mushrooms;
 
-public class Mushroom : IActivePart, IBottom
-{
-    public T_Tree? Parent { get; set; }
-}
+public class Mushroom : AnimalOrPlant, IBottom;

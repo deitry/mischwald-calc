@@ -5,10 +5,10 @@ namespace Mischwald.Animals;
 /// <summary>
 /// Куница
 /// </summary>
-public class Steinmarder : IAnimal, ILeftRight
+public class Steinmarder : AbstractAnimal, ILeftRight, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        return ctx.CurrentPlayer.Trees.Count(t => t.Full);
+        return 5 * ctx.CurrentPlayer.Trees.Count(t => t.Full);
     }
 }

@@ -3,4 +3,4 @@
 /// <summary>
 /// Белый гриб
 /// </summary>
-public class Steinpilz : Mushroom;
+public class Steinpilz : Mushroom, ICardName;

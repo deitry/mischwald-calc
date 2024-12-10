@@ -2,4 +2,4 @@
 
 namespace Mischwald.Animals;
 
-public class Waschbaer : IAnimal;
+public class Waschbaer : AbstractAnimal, ILeftRight, ICardName;

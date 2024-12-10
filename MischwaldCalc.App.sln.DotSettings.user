@@ -1,4 +1,99 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ebac1484_002D3ee6_002D4d61_002D9cd4_002D771569133035/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Solution /&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=426ceba4_002Dcb95_002D43c4_002D81b6_002Dad65fe8484eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c18c052_002Def43_002D474c_002D982c_002Da46abb244d44/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestPlay" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4fa1eece_002Da88a_002D4a68_002D84aa_002D67a16c46ef71/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=936440ee_002Dded9_002D4c14_002D89f2_002D4d0b1b986c53/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a5170142_002D63f7_002D422e_002Db3fb_002D0ea9f10419d0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b0306fe3_002Df0de_002D4c25_002D880b_002D819489a3e9b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Not&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BatsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.BucheTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.DamhirschTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.ErdkroeteTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HaresTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.HolzbieneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.LuchsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.PlayerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.TanneTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A1B0A251-A7E4-B2A3-08E2-907ED351C6B7::net9.0::Mischwald.Tests.WildschweinTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Not&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=aaa7678c_002Db53e_002D6009_002D04d6_002D269905b39af9_0023MischwaldCalc/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

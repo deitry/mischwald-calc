@@ -2,4 +2,4 @@
 
 namespace Mischwald.Bats;
 
-public class Hufeisennase : Bat;
+public class Hufeisennase : Bat, ICardName;

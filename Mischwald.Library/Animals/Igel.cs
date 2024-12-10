@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Igel : IAnimal, IBottom
+public class Igel : AbstractAnimal, IBottom, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

@@ -1,3 +1,3 @@
 ﻿namespace Mischwald.Insects.Butterflies;
 
-public sealed class Schillerfalter : Butterfly;
+public sealed class Schillerfalter : Butterfly, ICardName;

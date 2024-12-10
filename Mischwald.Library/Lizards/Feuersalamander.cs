@@ -2,9 +2,9 @@
 
 namespace Mischwald.Lizards;
 
-public class Feuersalamander : ILizard, IBottom
+public class Feuersalamander : Lizard, IBottom, ITypePoints, ICardName
 {
-    public override int GetTypePoints(PointsCalculationContext ctx)
+    public static int GetTypePoints(PointsCalculationContext ctx)
     {
         var salamanders = ctx.CurrentPlayer.GetAllCards<Feuersalamander>();
 

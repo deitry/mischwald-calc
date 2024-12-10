@@ -1,6 +1,6 @@
 ﻿namespace Mischwald.Trees;
 
-public class Douglasie : T_Tree, ITypedTree
+public class Douglasie : T_Tree, ITypedTree, ICardName
 {
     public override TreeTypeEnum TreeType => TreeTypeEnum.Douglasie;
 

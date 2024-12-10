@@ -27,7 +27,7 @@ public class ErdkroeteStack : IBottom, ICardStack
         }
         else if (Slot2 == null)
         {
-            Slot1 = erdkroete;
+            Slot2 = erdkroete;
         }
         else
             throw new Exception("Cannot hold more than two Erdkroete!");

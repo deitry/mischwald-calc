@@ -2,9 +2,9 @@
 
 namespace Mischwald.Insects.Butterflies;
 
-public class Butterfly : Insect, ITop
+public class Butterfly : Insect, ITop, ITypePoints
 {
-    public override int GetTypePoints(PointsCalculationContext ctx)
+    public static int GetTypePoints(PointsCalculationContext ctx)
     {
         var allButterflies = ctx.CurrentPlayer.GetAllCards<Butterfly>();
         var distinctTypes = allButterflies.DistinctBy(t => t.GetType());

@@ -2,9 +2,9 @@
 
 namespace Mischwald.Insects;
 
-public class Gluewuermchen : Insect, IBottom
+public class Gluewuermchen : Insect, IBottom, ITypePoints
 {
-    public override int GetTypePoints(PointsCalculationContext ctx)
+    public static int GetTypePoints(PointsCalculationContext ctx)
     {
         var total = ctx.CurrentPlayer.GetAllCards<Gluewuermchen>().Count;
         return total switch

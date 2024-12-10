@@ -77,6 +77,4 @@ public abstract class T_Tree : IActivePart
     public abstract TreeTypeEnum TreeType { get; }
 
     public virtual int GetInstancePoints(PointsCalculationContext ctx) => 0;
-
-    public virtual int GetTypePoints(PointsCalculationContext ctx) => 0;
 }

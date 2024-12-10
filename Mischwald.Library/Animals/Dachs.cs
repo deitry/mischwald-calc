@@ -5,7 +5,7 @@ namespace Mischwald.Animals;
 /// <summary>
 /// Барсук
 /// </summary>
-public class Dachs : IAnimal, ILeftRight
+public class Dachs : AbstractAnimal, ILeftRight, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

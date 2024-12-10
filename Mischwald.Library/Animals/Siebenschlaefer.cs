@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Siebenschlaefer : IAnimal, ILeftRight
+public class Siebenschlaefer : AbstractAnimal, ILeftRight, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

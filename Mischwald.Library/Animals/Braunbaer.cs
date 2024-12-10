@@ -2,4 +2,4 @@
 
 namespace Mischwald.Animals;
 
-public class Braunbaer : IAnimal, ILeftRight;
+public class Braunbaer : AbstractAnimal, ILeftRight, ICardName;

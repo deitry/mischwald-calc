@@ -9,6 +9,7 @@ public record GameContext
         return player.GetPoints(new PointsCalculationContext
         {
             CurrentPlayer = player,
+            Players = Players,
         });
     }
 

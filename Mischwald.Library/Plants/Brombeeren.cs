@@ -2,7 +2,7 @@
 
 namespace Mischwald.Plants;
 
-public class Brombeeren : Plant
+public class Brombeeren : Plant, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

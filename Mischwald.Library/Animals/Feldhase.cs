@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Feldhase : IAnimal
+public class Feldhase : AbstractAnimal, ICardName
 {
     public FeldhaseStack? ParentStack { get; set; }
 

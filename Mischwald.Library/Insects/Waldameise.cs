@@ -5,7 +5,7 @@ namespace Mischwald.Insects;
 /// <summary>
 /// Муравей
 /// </summary>
-public class Waldameise : Insect, IBottom
+public class Waldameise : Insect, IBottom, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

@@ -3,7 +3,7 @@ using Mischwald.Trees;
 
 namespace Mischwald.Animals;
 
-public class Luchs : IAnimal, ILeftRight
+public class Luchs : AbstractAnimal, ILeftRight, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

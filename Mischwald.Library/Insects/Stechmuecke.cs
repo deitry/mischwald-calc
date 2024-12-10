@@ -3,7 +3,8 @@ using Mischwald.Trees;
 
 namespace Mischwald.Insects;
 
-public class Stechmuecke : Insect, ILeftRight
+// ReSharper disable once ClassNeverInstantiated.Global
+public class Stechmuecke : Insect, ILeftRight, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

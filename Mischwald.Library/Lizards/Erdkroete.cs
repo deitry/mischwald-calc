@@ -3,7 +3,10 @@ using Mischwald.Trees;
 
 namespace Mischwald.Lizards;
 
-public class Erdkroete : ILizard
+/// <summary>
+/// Can be assigned to a tree only as a part of <see cref="ErdkroeteStack"/>
+/// </summary>
+public class Erdkroete : Lizard, ICardName
 {
     public ErdkroeteStack? ParentStack { get; set; }
 

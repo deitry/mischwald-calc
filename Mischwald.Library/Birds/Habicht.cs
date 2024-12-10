@@ -2,7 +2,7 @@
 
 namespace Mischwald.Birds;
 
-public class Habicht : Bird
+public class Habicht : Bird, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

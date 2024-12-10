@@ -3,12 +3,10 @@ using Mischwald.Trees;
 
 namespace Mischwald.Plants;
 
-public class Baumfarn : Plant
+public class Baumfarn : Plant, ICardName
 {
-    public T_Tree? Parent { get; set; }
-
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {
-        return 6 * ctx.CurrentPlayer.GetAllCards<ILizard>().Count;
+        return 6 * ctx.CurrentPlayer.GetAllCards<Lizard>().Count;
     }
 }

@@ -1,3 +1,3 @@
 ﻿namespace Mischwald.Insects.Butterflies;
 
-public class Tagpflauenauge : Butterfly;
+public class Tagpflauenauge : Butterfly, ICardName;

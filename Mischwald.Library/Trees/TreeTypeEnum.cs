@@ -10,5 +10,14 @@ public enum TreeTypeEnum
     Eiche,
     Kastanie,
     Tanne,
-    Linde
+    Linde,
+
+    Red = Ahorn,
+    LightGreen = Birke,
+    LightBlue = Douglasie,
+    DarkBlue = Tanne,
+    DarkGreen = Buche,
+    Yellow = Linde,
+    Orange = Kastanie,
+    Brown = Eiche,
 }

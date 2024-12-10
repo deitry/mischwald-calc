@@ -5,10 +5,8 @@ namespace Mischwald.Lizards;
 /// <summary>
 /// Черепаха
 /// </summary>
-public class Sumpshildkroete : ILizard, IBottom
+public class Sumpshildkroete : Lizard, IBottom, ICardName
 {
-    public T_Tree? Parent { get; set; }
-
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {
         return 5;

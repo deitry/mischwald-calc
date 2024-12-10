@@ -2,7 +2,7 @@
 
 namespace Mischwald.Animals;
 
-public class Eichhoernchen : IAnimal, ITop
+public class Eichhoernchen : AbstractAnimal, ITop, ICardName
 {
     public override int GetInstancePoints(PointsCalculationContext ctx)
     {

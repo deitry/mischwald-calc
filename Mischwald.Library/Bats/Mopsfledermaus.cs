@@ -2,4 +2,4 @@
 
 namespace Mischwald.Bats;
 
-public class Mopsfledermaus : Bat;
+public class Mopsfledermaus : Bat, ICardName;
